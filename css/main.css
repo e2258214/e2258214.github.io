@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background: #222;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: black;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#game-window {
+    background: #006600;
+    margin: 20px auto;
+    padding: 20px;
+    width: 800px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px black;
+}
+
+#player-hand,
+#table-area {
+    margin: 10px 0;
+}
+
+#controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    display: none;
+}
+
+.selected {
+    background-color: yellow;
+}
