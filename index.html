@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="furuerubatu">
+    <meta name="keywords" content="poker, cards, game">
+
+    <title>ポーカーゲーム</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>♠POKER♠</h1>
+    </header>
+
+    <main>
+        <div id="game-window">
+
+            <div id="table-area">
+                
+            </div>
+
+            <div id="player-hand">あなたの札:<span id="player-cards"></span></div>
+
+            <button onclick="startgame()" id="start">ゲーム開始</button>
+            <div>
+                <p id="change">カードを交換しました！</p>
+            </div>
+            <div id="controls">
+                <button onclick="excard(1)">1枚目</button>
+                <button onclick="excard(2)">2枚目</button>
+                <button onclick="excard(3)">3枚目</button>
+                <button onclick="excard(4)">4枚目</button>
+                <button onclick="excard(5)">5枚目</button>
+                <button onclick="exchange()">交換</button>
+            </div>
+            <button onclick="scoreex(playerHand)" id="judge">評価</button>
+            <p id="score">スコア: </p>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
