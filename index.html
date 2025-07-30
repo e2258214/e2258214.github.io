@@ -38,8 +38,10 @@
                 <button onclick="excard(5)">5枚目</button>
                 <button onclick="exchange()">交換</button>
             </div>
-            <button onclick="scoreex(playerHand)" id="judge">評価</button>
-            <p id="score">スコア: </p>
+            <button onclick="location.reload()" id="reset">リセット</button>
+            <button onclick="rslt(playerHand)" id="judge">評価</button>
+            <p id="player-result"></p>
+            <div id="score-text">スコア:<span id="score"></span></div>
         </div>
 
     </main>
